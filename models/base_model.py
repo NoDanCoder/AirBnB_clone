@@ -20,7 +20,7 @@ class BaseModel:
             storage.new(self)
 
 
-# Set properties by kwargs
+    # Set properties by kwargs
 
     @staticmethod
     def isoparse(isoformat):
@@ -35,14 +35,14 @@ class BaseModel:
             elif k != '__class__':
                 setattr(self, k, v)
 
-# Modify Instances
+    # Modify Instances
 
     def save(self):
         """ Save changes of a BaseModel instances and update JSON file. """
         self.updated_at = datetime.now()
         storage.save()
 
-# Get info of instance
+    # Get info of instance
 
     def to_dict(self):
         """ Return all info of a BaseModel instance. """
@@ -50,7 +50,7 @@ class BaseModel:
                 'updated_at': self.updated_at.isoformat(),
                 'created_at': self.created_at.isoformat()}
 
-# Print info of instances
+    # Print info of instances
 
     @property
     def getType(self):
