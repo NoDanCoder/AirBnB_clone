@@ -1,12 +1,78 @@
 # AirBnB clone project
 
- - How to create a Python package  
- - How to create a command interpreter in Python using the cmd module  
- - What is Unit testing and how to implement it in a large project  
- - How to serialize and deserialize a Class  
- - How to write and read a JSON file  
- - How to manage datetime  
- - What is an UUID  
- - What is *args and how to use it  
- - What is **kwargs and how to use it  
- - How to handle named arguments in a function  
+![holberton](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUZGDONYM4%2F20200219%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200219T051147Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ea0d8f1c540d814c12b0d125e99720818c0179a6ce1e833fa46a2c9f3f77924e)
+
+---
+
+## Description
+
+For a make a clone for Airbnb product, you first make a console that is a first step for manupulate a storage system.
+
+---
+
+### Command interpreter Description
+
+* The console runs in interactive mode as well.
+
+    <code>$ ./console.py</code>
+
+* The console runs in non-interactive mode as well.
+
+    <code>$ echo "help" | ./console.py</code>
+
+### Commands
+
+Commands mostly use this form:
+
+    (hbnb) <instance> <id> <...> <...>
+
+## Create
+Each instance is treated as an object within the console.
+
+To create an instance you just have to write a command like the following:
+
+    (hbnb) create BaseModel
+    e4f9efcf-22cd-461f-8f7a-491ee70d8190
+    (hbnb)
+
+## Show
+To see an instance you must use:
+
+    (hbnb) show BaseModel e4f9efcf-22cd-461f-8f7a-491ee70d8190
+    [BaseModel] (e4f9efcf-22cd-461f-8f7a-491ee70d8190) {'id': 'e4f9efcf-22cd-461f-8f7a-491ee70d8190', 'created_at': datetime.datetime(2020, 2, 19, 18, 46, 26, 448621), 'updated_at': datetime.datetime(2020, 2, 19, 18, 46, 26, 448670)}
+    (hbnb)
+
+## All
+To list all instances created:
+
+    (hbnb) all
+    ["[BaseModel] (e4f9efcf-22cd-461f-8f7a-491ee70d8190) {'id': 'e4f9efcf-22cd-461f-8f7a-491ee70d8190', 'created_at': datetime.datetime(2020, 2, 19, 18, 46, 26, 448621), 'updated_at': datetime.datetime(2020, 2, 19, 18, 46, 26, 448670)}"]
+    (hbtn) 
+
+## Update
+When you need update any atribute of you instance:
+
+    (hbnb) update BaseModel e4f9efcf-22cd-461f-8f7a-491ee70d8190 first_name "Daniel"
+    (hbnb) show BaseModel e4f9efcf-22cd-461f-8f7a-491ee70d8190
+    [BaseModel] (e4f9efcf-22cd-461f-8f7a-491ee70d8190) {'id': 'e4f9efcf-22cd-461f-8f7a-491ee70d8190', 'created_at': datetime.datetime(2020, 2, 19, 18, 46, 26, 448621), 'updated_at': datetime.datetime(2020, 2, 19, 18, 55, 10, 376964), 'first_name': 'Daniel'}
+    (hbnb)
+
+## Destroy
+To destroy an instance:
+
+    (hbtn) destroy BaseModel e4f9efcf-22cd-461f-8f7a-491ee70d8190
+    (hbtn) show BaseModel e4f9efcf-22cd-461f-8f7a-491ee70d8190
+    ** no instance found **
+    (hbtn) 
+
+## Help && quit
+If you have no idea what to do try using help, and to exit is quit.
+
+    (hbtn) help
+
+    Documented commands (type help <topic>):
+    ========================================
+    EOF  all  create  destroy  help  quit  show  update
+
+    (hbtn) quit
+    $
