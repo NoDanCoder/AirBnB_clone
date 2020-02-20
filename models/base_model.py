@@ -45,7 +45,7 @@ class BaseModel:
     def to_dict(self):
         """ Return all info of a BaseModel instance. """
         n_dict = self.__dict__.copy()
-        n_dict['__class__'] = self.getType,
+        n_dict['__class__'] = self.getType
         n_dict['updated_at'] = self.updated_at.isoformat()
         n_dict['created_at'] = self.created_at.isoformat()
         return n_dict
