@@ -1,6 +1,6 @@
 # AirBnB clone project
 
-![holberton](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUZGDONYM4%2F20200219%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200219T051147Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=ea0d8f1c540d814c12b0d125e99720818c0179a6ce1e833fa46a2c9f3f77924e)
+![holberton](./hbnb.png)
 
 ---
 
