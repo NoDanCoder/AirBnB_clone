@@ -27,7 +27,6 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, line):
         """ Exist of the console by signal """
-        print("")
         return True
 
     def emptyline(self):
