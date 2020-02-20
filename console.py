@@ -16,7 +16,8 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = '(hbtn) '
     __BaseModel_subclass = [cls.__name__ for cls in BaseModel.__subclasses__()]
-    __buff_class = ['BaseModel', *__BaseModel_subclass]
+    __buff_class = ['BaseModel']
+    __buff_class.extend(__BaseModel_subclass)
 
     # general commands
 
