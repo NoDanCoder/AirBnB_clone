@@ -19,9 +19,7 @@ class BaseModel:
             self.updated_at = datetime.now()
             storage.new(self)
 
-
     # Set properties by kwargs
-
     @staticmethod
     def isoparse(isoformat):
         """ parse a date from iso format to datetime object """
