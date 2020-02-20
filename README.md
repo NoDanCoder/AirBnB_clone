@@ -76,3 +76,10 @@ If you have no idea what to do try using help, and to exit is quit.
 
     (hbtn) quit
     $
+
+---
+Authors
+
+* **Daniel Alejandro Cumaco.** - [Wetgou](https://github.com/Wetgou)
+
+* **Cristian A. Murcia T.** - [Cris-Mur](https://github.com/Cris-Mur)
