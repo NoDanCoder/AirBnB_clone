@@ -14,7 +14,7 @@ from models.user import User
 class HBNBCommand(cmd.Cmd):
     """ Class which control the console, and user interface """
 
-    prompt = '(hbtn) '
+    prompt = '(hbnb) '
     __BaseModel_subclass = [cls.__name__ for cls in BaseModel.__subclasses__()]
     __buff_class = ['BaseModel']
     __buff_class.extend(__BaseModel_subclass)
