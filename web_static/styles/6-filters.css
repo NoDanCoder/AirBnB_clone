@@ -39,6 +39,7 @@
 {
 	height: 100%;
 	width: 25%;
+	position: relative;
 
 	display: flex;
 	flex-flow: column nowrap;
@@ -68,4 +69,75 @@
 .container .amenities
 {
 	margin-right: auto;
+}
+
+/* Lists */
+
+ul.popover
+{
+	position: absolute;
+	margin-top: auto;
+	top: 70px;
+	left: -1px;
+
+	background-color: #FAFAFA;
+	width: 100%;
+	border: 1px solid #DDD;
+	border-radius: 4px;
+	list-style: none;
+
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+.container .locations:hover ul.popover,
+.container .amenities:hover ul.popover
+{
+	display: flex;
+}
+
+ul.popover .state_opt
+{
+	margin-top: 25px;
+	margin-left: 9%;
+}
+
+ul.popover .state_opt h2
+{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+ul.popover .state_opt ul
+{
+	margin-left: 20px;
+}
+
+ul.popover .state_opt ul li
+{
+	margin-top: 10px;
+}
+
+ul.popover .state_opt.last
+{
+	margin-bottom: 25px;
+}
+
+ul.hide
+{
+	display: none;
+}
+
+/* amenities list */
+
+.amenities .popover li
+{
+	margin-left: 15%;
+	margin-top: 20px;
+}
+
+.amenities .popover li.last
+{
+	margin-bottom: 20px;
 }
