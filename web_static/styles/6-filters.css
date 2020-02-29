@@ -37,6 +37,7 @@
 .container .locations,
 .container .amenities
 {
+	box-sizing: content-box;
 	height: 100%;
 	width: 25%;
 	position: relative;
@@ -75,9 +76,10 @@
 
 ul.popover
 {
+	box-sizing: content-box;
 	position: absolute;
 	margin-top: auto;
-	top: 70px;
+	top: 68px;
 	left: -1px;
 
 	background-color: #FAFAFA;
