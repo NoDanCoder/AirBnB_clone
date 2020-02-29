@@ -1,0 +1,23 @@
+header
+{
+    background-color: #FFF;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCC;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.main_logo
+{
+    height: 60px;
+    width: 142px;
+    
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 20px;
+}
