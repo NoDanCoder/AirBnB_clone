@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>AirBnB clone</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/101-places.css">
+</head>
+<body>
+    <div class="content">
+
+        <!-- Header -->
+        <header>
+            <div class="main_logo"></div>
+        </header>
+
+        <!-- Wrapp -->
+        <div class="container">
+
+            <!-- Filters -->
+            <section class="filters">
+                <div class="locations">
+                    <h3>States</h3>
+                    <h4>California, Arizona...</h4>
+                    <ul class="popover hide">
+                        <li class="state_opt">
+                            <h2>Arizona</h2>
+                            <ul>
+                                <li>Page</li>
+                                <li>Page2</li>
+                            </ul>
+                        </li>
+                        <li class="state_opt last">
+                            <h2>California:</h2>
+                            <ul>
+                                <li>San francisco</li>
+                                <li>Los Altos</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="amenities">
+                    <h3>Amenities</h3>
+                    <h4>Internet, Kitchen...</h4>
+                    <ul class="popover hide">
+                        <li>Internet</li>
+                        <li>TV</li>
+                        <li>Kitchen</li>
+                        <li class="last">Iron</li>
+                    </ul>
+                </div>
+                <button>Search</button>
+            </section>
+
+            <section class="places">
+                <h1>Places</h1>
+
+                <!-- First Target -->
+                <article>
+                    <div class="head-info">
+                        <h2>My home</h2>
+                        <div class="price_by_night">$80</div>
+                    </div>
+                    <div class="information">
+                        <div class="icon_group"></div>
+                        <div class="max_guest">2 Guests</div>
+                        <div class="icon_bed"></div>
+                        <div class="number_rooms">1 Bedroom</div>
+                        <div class="icon_bath"></div>
+                        <div class="number_bathrooms">1 Bathroom</div>
+                    </div>
+                    <div class="user"><b>Owner:</b> John Lennon</div>
+                    <div class="description">
+                        <p>
+                            This is a lovely 1 bedroom and 1 bathroom apartment that
+                            can accommodate 2 people. It locates at the center of 
+                            Shanghai and next to subway line 1,1 stop to People 
+                            Square, 2 stops to Bund,  3 stops to Jingan Temple.
+                        </p>
+                    </div>
+                    <div class="amenities">
+                        <h2>Amenities</h2>
+                        <ul>
+                            <li>
+                                <div class="icon_tv"></div>
+                                <p>TV</p>
+                            </li>
+                            <li>
+                                <div class="icon_wifi"></div>
+                                <p>Wifi</p>
+                            </li>
+                            <li>
+                                <div class="icon_pets"></div>
+                                <p>Pets friendly</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews">
+                        <h2>2 Reviews</h2>
+                        <ul>
+                            <li>
+                                <h3>From Bob Dylan the 27th January 2017</h3>
+                                <p>Runshi is an epic host. Nothing more I can say. 5 star!</p>
+                            </li>
+                            <li>
+                                <h3>From Connor the 4th January 2017</h3>
+                                <p>Highly recommended!</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Second Target -->
+                <article>
+                    <div class="head-info">
+                        <h2>Tiny house</h2>
+                        <div class="price_by_night">$65</div>
+                    </div>
+                    <div class="information">
+                        <div class="icon_group"></div>
+                        <div class="max_guest">4 Guests</div>
+                        <div class="icon_bed"></div>
+                        <div class="number_rooms">2 Bedrooms</div>
+                        <div class="icon_bath"></div>
+                        <div class="number_bathrooms">1 Bathroom</div>
+                    </div>
+                    <div class="user"><b>Owner:</b> Adrienne</div>
+                    <div class="description">
+                        <p>
+                            Our place is a private, affordable stand-alone guest 
+                            house centrally located just minutes to French
+                            Quarters, downtown, the Fair Grounds(Jazz Fest) and 
+                            City Park. The guest house is a quaint, 400 square ft. 
+                            with a full bath, mini kitchen, & living room. The 
+                            extra high ceilings make the home feel more spacious. 
+                            The sofa converts to a bed also. We have a hand made counter
+                            area that adds character to the room and a great 
+                            porch/deck to relax on and have a glass of Merlot.
+                        </p>
+                    </div>
+                    <div class="amenities">
+                        <h2>Amenities</h2>
+                        <ul>
+                            <li>
+                                <div class="icon_pets"></div>
+                                <p>Pets friendly</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews">
+                        <h2>2 Reviews</h2>
+                        <ul>
+                            <li>
+                                <h3>From Max the 15th January 2017</h3>
+                                <p>
+                                    Fantastic place. It was clean, Adrienne was great (even
+                                    though we did not meet in person) and everything went super
+                                    smooth. Location is also greate if you like running and 
+                                    something a bit more quiet. I would suggest a car or take
+                                    into consideration that you might have to Uber into the 
+                                    city from the location. Overall, would recommend the place
+                                    anytime.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Third Target -->
+                <article>
+                    <div class="head-info">
+                        <h2>A suite</h2>
+                        <div class="price_by_night">$190</div>
+                    </div>
+                    <div class="information">
+                        <div class="icon_group"></div>
+                        <div class="max_guest">6 Guests</div>
+                        <div class="icon_bed"></div>
+                        <div class="number_rooms">4 Bedrooms</div>
+                        <div class="icon_bath"></div>
+                        <div class="number_bathrooms">2 Bathrooms</div>
+                    </div>
+                    <div class="user"><b>Owner:</b> Edison</div>
+                    <div class="description">
+                        <p>
+                            Ideally located in Times Square, this Manhattan hotel has been around
+                            since 1930. With distinct influences of the Art Deco era in the design
+                            of the lobby and the exterior, Hotel Edison offers Classic and Signature
+                            rooms and suites.<br>
+                            Each room and suite features flat-screen cable TV. The private bathrooms
+                            are equipped with a hairdryer and free toiletries. Air conditioning is also
+                            included.<br>
+                        </p>
+                    </div>
+                    <div class="amenities">
+                        <h2>Amenities</h2>
+                        <ul>
+                            <li>
+                                <div class="icon_tv"></div>
+                                <p>TV</p>
+                            </li>
+                            <li>
+                                <div class="icon_wifi"></div>
+                                <p>Wifi</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="reviews">
+                        <h2>2 Reviews</h2>
+                        <ul>
+                            <li>
+                                <h3>From Felix the 15th December 2018</h3>
+                                <p>I love it.</p>
+                            </li>
+                            <li>
+                                <h3>From Daniel the 15th December 2020</h3>
+                                <p>A little expensive, but a great experience.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Holberton School</p>
+        </footer>
+    </div>
+</body>
+</html>
